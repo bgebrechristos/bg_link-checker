@@ -25,18 +25,14 @@ exports.output = function (links) {
 			}
 		});
 	});
-	//console.log(JSON.stringify(finalLink, null, 4));
-	//console.log(finalLink.page);
 	
 	console.log(("\t--------------RESULT--------------\t").inverse);
 	finalLink.forEach(function(flag) {
 			if(flag.result.pass.length) {
 				console.log(chalk.yellow("\t---------------------------------------"));
 				console.log("\tPAGE => " + chalk.bold(flag.page));
-				console.log(chalk.blue("\t" + chalk.underline(flag.result.pass.length + " link\(s\) passed")));
-				
-			}
-			
+				console.log(chalk.blue("\t" + chalk.underline(flag.result.pass.length + " link\(s\) passed")));		
+			}	
 	});
 	
 	finalLink.forEach(function(flag) {

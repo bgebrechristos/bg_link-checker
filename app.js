@@ -26,9 +26,6 @@ var AUTH_PROMPT = {
 
 var counter = 0;
 
-var nullAuth = {user: null, pass: null };
-
-
 if (process.argv.length <= 2) {
 	print(chalk.red("Please enter atleast one option"));
 	program.help();
@@ -84,9 +81,6 @@ function getFileContent(file) {
 			});
 	}); 
 }//end of getFileContent
-
-
-
 
 function checkForAuth(urls) {
 	return new Promise(function(resolve,reject) {
@@ -149,4 +143,4 @@ function promptForAuthentication(url) {
 			}
 		});
 	});
-}
+} //end of promptForAuthentication

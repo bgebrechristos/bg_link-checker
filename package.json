@@ -1,0 +1,33 @@
+{
+  "name": "link-checker",
+  "version": "1.0.0",
+  "description": "This script will check if the link is 404",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgebrechristos/bg_link-checker.git"
+  },
+  "keywords": [
+    "link",
+    "404",
+    "http",
+    "status"
+  ],
+  "author": "Brook Gebrechristos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgebrechristos/bg_link-checker/issues"
+  },
+  "homepage": "https://github.com/bgebrechristos/bg_link-checker#readme",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "cheerio": "^0.20.0",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "progress": "^1.1.8",
+    "request": "^2.69.0"
+  }
+}
